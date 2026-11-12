@@ -4,7 +4,7 @@ import reactHooks from 'eslint-plugin-react-hooks';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  { ignores: ['dist', 'dev-dist', 'node_modules', 'coverage', 'test-results', 'playwright-report'] },
+  { ignores: ['dist', 'dist-e2e', 'dev-dist', 'node_modules', 'coverage', 'test-results', 'playwright-report'] },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['**/*.{ts,tsx}'],
@@ -14,6 +14,11 @@ export default tseslint.config(
       ...reactHooks.configs.recommended.rules,
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     },
+  },
+  {
+    // Devanagari matching legitimately puts vowel signs (combining marks) inside regex classes.
+    files: ['src/lib/**/*.ts'],
+    rules: { 'no-misleading-character-class': 'off' },
   },
   {
     files: ['**/*.{js,mjs}'],

@@ -17,7 +17,7 @@ interface Expected {
   secrets: string[];
 }
 
-const dir = join(__dirname, '../../fixtures');
+const dir = join(import.meta.dirname, '../../fixtures');
 const expected = JSON.parse(readFileSync(join(dir, 'expected.json'), 'utf8')) as Record<string, Expected>;
 
 describe.each(Object.entries(expected))('fixture %s', (file, exp) => {

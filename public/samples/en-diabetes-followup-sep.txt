@@ -1,0 +1,11 @@
+CITYCARE PATHOLOGY LAB, NAGPUR
+Synthetic sample report for LabLens testing
+
+Name: Mr. Rajesh Kumar Verma    Age: 52 Years    Sex: Male
+Patient ID: CC/93120    Contact No: +91 91234 56789
+Report Date: 15/09/2026
+
+Investigation                  Result    Units    Reference Range
+Glucose Fasting (FBS)          108  H    mg/dL    70 - 100
+HbA1c                          6.4       %        4.0 - 5.6
+LDL Cholesterol                96        mg/dL    < 100

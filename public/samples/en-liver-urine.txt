@@ -1,0 +1,18 @@
+METRO LABS, BENGALURU
+Synthetic sample report for LabLens testing
+
+Patient Name : Mr. Arjun Rao     Age : 41 Y     Gender : Male
+Lab No : ML-77341     Email : arjun.rao.fake@example.org
+Collected : 18/10/2026
+
+LIVER FUNCTION TEST
+Parameter                  Result    Unit     Reference
+Total Bilirubin            1.0       mg/dL    0.3 - 1.2
+SGPT (ALT)                 88   H    U/L      Up to 45
+SGOT (AST)                 61   H    U/L      Up to 40
+Alkaline Phosphatase       102       U/L      44 - 147
+Serum Albumin              4.3       g/dL     3.5 - 5.0
+
+URINE ROUTINE
+Urine Protein              Trace
+Urine Glucose              Nil
