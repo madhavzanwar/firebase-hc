@@ -1,0 +1,25 @@
+dist/assets/inter-latin-wght-normal-Dx4kXJAl.woff2                        48.25 kB
+dist/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2     50.41 kB
+dist/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2     53.71 kB
+dist/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff      68.46 kB
+dist/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff      71.66 kB
+dist/assets/inter-latin-ext-wght-normal-DO1Apj_S.woff2                    85.06 kB
+dist/assets/pdf.worker.min-CIqJB0yW.mjs                                1,271.91 kB
+dist/assets/index-BCoz04NW.css                                            41.75 kB │ gzip:   8.34 kB
+dist/assets/pdf.worker.min-UqOn5EDC.js                                     0.11 kB │ gzip:   0.12 kB │ map:     0.29 kB
+dist/assets/workbox-window.prod.es5-Bd17z0YL.js                            5.71 kB │ gzip:   2.25 kB │ map:    13.44 kB
+dist/assets/History-BYEoe4t_.js                                          374.28 kB │ gzip: 107.99 kB │ map: 2,050.76 kB
+dist/assets/pdf-YwugTw7Y.js                                              444.27 kB │ gzip: 133.67 kB │ map: 1,516.52 kB
+dist/assets/sync-BsmXxzYn.js                                             530.36 kB │ gzip: 160.14 kB │ map: 2,888.74 kB
+dist/assets/index-_m9xa1sZ.js                                            701.83 kB │ gzip: 210.29 kB │ map: 2,900.52 kB
+
+✓ built in 1.71s
+
+PWA v2.0.0
+mode      generateSW
+precache  46 entries (3963.37 KiB)
+files generated
+  dist/sw.js.map
+  dist/sw.js
+  dist/workbox-d8ed3718.js.map
+  dist/workbox-d8ed3718.js

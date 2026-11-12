@@ -40,7 +40,7 @@ export function StatusBar() {
         <p className="flex items-center gap-1.5 text-slate-700">
           {caps.online ? <Wifi aria-hidden="true" className="size-4" /> : <WifiOff aria-hidden="true" className="size-4" />}
           {caps.online ? t('status.online') : t('status.offline')}
-          {!caps.cloudConfigured && <span className="text-slate-500">· {t('status.cloudNotConfigured')}</span>}
+          {!caps.cloudConfigured && <span className="text-slate-600">· {t('status.cloudNotConfigured')}</span>}
         </p>
         <div className="ml-auto flex flex-wrap items-center gap-x-4 gap-y-1">
           <label className="flex cursor-pointer items-center gap-2 font-semibold text-slate-800" title={t('status.onDeviceOnlyHint')}>

@@ -115,3 +115,11 @@ export async function mockCloud(page: Page): Promise<CloudLog> {
 export async function nanoCalls(page: Page): Promise<Array<{ text: string; hasImage: boolean; outLang?: string }>> {
   return page.evaluate(() => (window as unknown as { __nanoCalls: Array<{ text: string; hasImage: boolean; outLang?: string }> }).__nanoCalls ?? []);
 }
+
+/** Simulate a browser without the Prompt API (e.g. mobile, Firefox, older Chrome). */
+export async function removeNano(page: Page) {
+  await page.addInitScript(() => {
+    delete (window as unknown as { LanguageModel?: unknown }).LanguageModel;
+    Object.defineProperty(window, 'LanguageModel', { value: undefined, configurable: true });
+  });
+}

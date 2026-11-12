@@ -27,7 +27,7 @@ export function createOptionsFor(outputLang: Lang, withImage = false) {
   };
 }
 
-export async function probeNano(): Promise<{ status: NanoStatus; langs: Lang[]; image: boolean }> {
+export async function probeNano(extraLangs: Lang[] = []): Promise<{ status: NanoStatus; langs: Lang[]; image: boolean }> {
   const lm = languageModel();
   if (!lm) return { status: 'no_api', langs: [], image: false };
   const langs: Lang[] = [];
@@ -42,7 +42,8 @@ export async function probeNano(): Promise<{ status: NanoStatus; langs: Lang[]; 
     } catch {
       image = false;
     }
-    for (const l of ['hi', 'mr'] as const) {
+    // Only probe languages Remote Config says to try: Chrome logs an error for unsupported ones.
+    for (const l of extraLangs.filter((x) => x !== 'en')) {
       try {
         if ((await lm.availability(createOptionsFor(l))) === 'available') langs.push(l);
       } catch {

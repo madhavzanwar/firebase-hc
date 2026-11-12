@@ -1,0 +1,4 @@
+http://localhost:4174/ {"performance":1,"accessibility":1,"best-practices":1,"seo":1} 
+http://localhost:4174/#/help {"performance":1,"accessibility":1,"best-practices":1,"seo":1} 
+http://localhost:4174/#/history {"performance":0.99,"accessibility":1,"best-practices":1,"seo":1} 
+PWA {"manifest":true,"maskableIcon":true,"serviceWorker":true,"startUrl":"/"}

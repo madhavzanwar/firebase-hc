@@ -1,0 +1,14 @@
+
+Running 9 tests using 1 worker
+
+  ✓  1 e2e/a11y.spec.ts:11:1 › WCAG 2.1 AA: home, report (EN + HI), history, privacy, help (5.7s)
+  ✓  2 e2e/a11y.spec.ts:31:1 › WCAG 2.1 AA: image consent dialog, keyboard reachable (931ms)
+  ✓  3 e2e/lablens.spec.ts:13:3 › hybrid path: Gemini Nano available › upload → on-device explanation → Hindi/Marathi switch → history (2.5s)
+  ✓  4 e2e/lablens.spec.ts:72:3 › hybrid path: Gemini Nano available › trend chart across three reports of the same person (1.5s)
+  ✓  5 e2e/lablens.spec.ts:85:3 › fallback path: no Gemini Nano › text PDF → rules redaction → cloud summary on redacted data, urgent banner (900ms)
+  ✓  6 e2e/lablens.spec.ts:113:3 › fallback path: no Gemini Nano › photo needs explicit consent and masking before going to the cloud (621ms)
+  ✓  7 e2e/lablens.spec.ts:130:3 › fallback path: no Gemini Nano › declining consent sends nothing (383ms)
+  ✓  8 e2e/lablens.spec.ts:140:3 › fallback path: no Gemini Nano › on-device-only mode never calls the cloud and still explains with rules (517ms)
+  ✓  9 e2e/lablens.spec.ts:155:1 › offline with Gemini Nano: the whole flow runs on the device (918ms)
+
+  9 passed (18.8s)

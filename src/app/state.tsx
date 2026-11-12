@@ -7,7 +7,7 @@ import type { PrivacyLogEntry, SavedReport } from '../lib/types';
 import { probeNano } from '../ai/capabilities';
 import { initDeviceModel, onPrivacyEvent } from '../ai/engine';
 import { isFirebaseConfigured } from '../ai/firebase';
-import { loadRemoteConfig } from '../ai/remote-config';
+import { aiConfig, loadRemoteConfig } from '../ai/remote-config';
 import * as db from '../store/db';
 const sync = () => import('../store/sync');
 import type { Ctx } from './pipeline';
@@ -68,11 +68,13 @@ export function AppProvider({ children }: { children: ReactNode }) {
     [nano, online],
   );
 
-  const refreshCaps = useCallback(async () => setNano(await probeNano()), []);
+  const refreshCaps = useCallback(async () => setNano(await probeNano(aiConfig().nanoExtraLangs)), []);
 
   useEffect(() => {
     void probeNano().then(setNano);
-    void loadRemoteConfig();
+    void loadRemoteConfig().then((cfg) => {
+      if (cfg.nanoExtraLangs.length) void probeNano(cfg.nanoExtraLangs).then(setNano);
+    });
     void db.listReports().then(setReports).catch(() => setReports([]));
     void db.listLog().then(setLog).catch(() => setLog([]));
     const on = () => setOnline(true);

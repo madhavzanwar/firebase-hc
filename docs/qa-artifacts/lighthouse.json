@@ -1,0 +1,41 @@
+{
+  "when": "2026-11-12T04:53:47.372Z",
+  "results": [
+    {
+      "url": "http://localhost:4174/",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1,
+        "seo": 1
+      },
+      "failingBinaryAudits": []
+    },
+    {
+      "url": "http://localhost:4174/#/help",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 1,
+        "seo": 1
+      },
+      "failingBinaryAudits": []
+    },
+    {
+      "url": "http://localhost:4174/#/history",
+      "scores": {
+        "performance": 0.99,
+        "accessibility": 1,
+        "best-practices": 1,
+        "seo": 1
+      },
+      "failingBinaryAudits": []
+    }
+  ],
+  "pwa": {
+    "manifest": true,
+    "maskableIcon": true,
+    "serviceWorker": true,
+    "startUrl": "/"
+  }
+}

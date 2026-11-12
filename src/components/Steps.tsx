@@ -16,7 +16,7 @@ export function Steps({ steps }: { steps: Partial<Record<StepId, StepEvent>> }) 
         return (
           <li key={id} className="flex flex-wrap items-center gap-2 text-sm">
             <Icon aria-hidden="true" className={`size-5 ${tone} ${s?.status === 'running' ? 'animate-spin' : ''}`} />
-            <span className={s ? 'font-medium text-slate-900' : 'text-slate-500'}>{t(`steps.${id}`)}</span>
+            <span className={s ? 'font-medium text-slate-900' : 'text-slate-600'}>{t(`steps.${id}`)}</span>
             {s?.status === 'done' && s.source && <SourceBadge source={s.source} />}
             {id === 'redact' && s?.status === 'done' && s.detail && s.detail !== '0' && (
               <span className="text-xs text-slate-600">{t('steps.masked', { count: Number(s.detail) })}</span>

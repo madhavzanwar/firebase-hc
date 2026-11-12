@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { join } from 'node:path';
-import { installFakeNano, mockCloud, nanoCalls } from './mocks';
+import { installFakeNano, mockCloud, nanoCalls, removeNano } from './mocks';
 
 const samples = join(import.meta.dirname, '../public/samples');
 const PII = ['Priya', 'Deshmukh', '98765', '43210', 'priya.d.fake', 'Shanti Kunj', 'SDL-2026', 'Kulkarni', 'Ganesh', 'Patil', 'LH-55120', 'Meera', '2456 7890', 'Rajesh', 'Verma', '91234', '2345 6789 0123'];
@@ -83,6 +83,7 @@ test.describe('hybrid path: Gemini Nano available', () => {
 
 test.describe('fallback path: no Gemini Nano', () => {
   test('text PDF → rules redaction → cloud summary on redacted data, urgent banner', async ({ page }) => {
+    await removeNano(page);
     const cloud = await mockCloud(page);
     await page.goto('/');
     await expect(page.getByTestId('nano-status')).toHaveAttribute('data-status', 'no_api');
@@ -110,6 +111,7 @@ test.describe('fallback path: no Gemini Nano', () => {
   });
 
   test('photo needs explicit consent and masking before going to the cloud', async ({ page }) => {
+    await removeNano(page);
     const cloud = await mockCloud(page);
     await page.goto('/');
     await page.getByTestId('sample-cbc').click();
@@ -126,6 +128,7 @@ test.describe('fallback path: no Gemini Nano', () => {
   });
 
   test('declining consent sends nothing', async ({ page }) => {
+    await removeNano(page);
     const cloud = await mockCloud(page);
     await page.goto('/');
     await page.getByTestId('sample-cbc').click();
@@ -135,6 +138,7 @@ test.describe('fallback path: no Gemini Nano', () => {
   });
 
   test('on-device-only mode never calls the cloud and still explains with rules', async ({ page }) => {
+    await removeNano(page);
     const cloud = await mockCloud(page);
     await page.goto('/');
     await page.getByTestId('on-device-only').check({ force: true });
