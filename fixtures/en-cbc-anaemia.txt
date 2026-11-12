@@ -1,0 +1,20 @@
+SUNRISE DIAGNOSTIC LABORATORY, PUNE
+NABL accredited | Synthetic sample report for LabLens testing
+
+Patient Name : Mrs. Priya Deshmukh      Age/Sex : 34 Y / F
+UHID : SDL-2026-004512      Ref. By : Dr. Anil Kulkarni
+Mobile : 98765 43210      Email : priya.d.fake@example.com
+Address : Flat 12, Shanti Kunj, Karve Road, Pune - 411004
+Collected On : 14/02/2026      Reported On : 14/02/2026
+
+COMPLETE BLOOD COUNT (CBC)
+Test Name              Result      Unit           Bio. Ref. Interval
+Haemoglobin            9.8   L     g/dL           12.0 - 15.5
+Total RBC Count        3.6         million/cumm   3.8 - 4.8
+PCV                    31.2        %              36 - 46
+MCV                    74          fL             83 - 101
+Total Leucocyte Count  7,800       /cumm          4,000 - 11,000
+Platelet Count         2.4         lakh/cumm      1.5 - 4.1
+ESR                    28          mm/hr          0 - 20
+
+*** End of Report ***

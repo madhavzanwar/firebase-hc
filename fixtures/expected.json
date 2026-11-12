@@ -1,0 +1,57 @@
+{
+  "en-cbc-anaemia.txt": {
+    "kind": "lab", "sex": "female", "age": 34, "date": "2026-02-14",
+    "flags": { "haemoglobin": "low", "rbc": "low", "pcv": "low", "mcv": "low", "wbc": "normal", "platelets": "normal", "esr": "high" },
+    "secrets": ["Priya", "Deshmukh", "98765 43210", "priya.d.fake@example.com", "Shanti Kunj", "SDL-2026-004512", "Kulkarni", "411004"]
+  },
+  "en-diabetes-lipid-mar.txt": {
+    "kind": "lab", "sex": "male", "age": 52, "date": "2026-03-10",
+    "flags": { "glucose_fasting": "high", "glucose_pp": "high", "hba1c": "high", "cholesterol_total": "high", "triglycerides": "high", "hdl": "low", "ldl": "high", "creatinine": "normal" },
+    "secrets": ["Rajesh", "Verma", "91234 56789", "2345 6789 0123", "CC/88213"]
+  },
+  "en-diabetes-followup-jun.txt": {
+    "kind": "lab", "sex": "male", "date": "2026-06-12",
+    "flags": { "glucose_fasting": "high", "hba1c": "high", "ldl": "high" },
+    "secrets": ["Rajesh", "Verma", "91234 56789", "CC/90455"]
+  },
+  "en-diabetes-followup-sep.txt": {
+    "kind": "lab", "sex": "male", "date": "2026-09-15",
+    "flags": { "glucose_fasting": "high", "hba1c": "high", "ldl": "normal" },
+    "secrets": ["Rajesh", "Verma", "91234 56789", "CC/93120"]
+  },
+  "en-kidney-critical.txt": {
+    "kind": "lab", "sex": "male", "age": 67, "date": "2026-11-03",
+    "flags": { "urea": "high", "creatinine": "high", "uric_acid": "high", "sodium": "low", "potassium": "critical_high", "calcium": "normal" },
+    "secrets": ["Ganesh", "Patil", "LH-55120", "Meera", "2456 7890"]
+  },
+  "hi-thyroid-vitamins.txt": {
+    "kind": "lab", "sex": "female", "age": 45, "date": "2026-08-05",
+    "flags": { "tsh": "high", "ft4": "low", "vitamin_d": "low", "vitamin_b12": "low", "haemoglobin": "normal" },
+    "secrets": ["सुनीता", "अग्रवाल", "99887 66554", "गांधी नगर", "302015"]
+  },
+  "mr-cbc-dengue.txt": {
+    "kind": "lab", "sex": "male", "age": 28, "date": "2026-09-21",
+    "flags": { "haemoglobin": "normal", "wbc": "low", "platelets": "low", "rbc": "normal" },
+    "secrets": ["अमोल", "जाधव", "90112 23344", "गंगापूर", "422013"]
+  },
+  "mr-diabetes.txt": {
+    "kind": "lab", "sex": "female", "age": 58, "date": "2026-10-02",
+    "flags": { "glucose_fasting": "high", "glucose_pp": "high", "hba1c": "high", "creatinine": "normal" },
+    "secrets": ["मंगल", "पाटील", "94220 11223"]
+  },
+  "en-liver-urine.txt": {
+    "kind": "lab", "sex": "male", "age": 41, "date": "2026-10-18",
+    "flags": { "bilirubin_total": "normal", "alt": "high", "ast": "high", "alp": "normal", "albumin": "normal", "urine_protein": "abnormal", "urine_glucose": "normal" },
+    "secrets": ["Arjun", "Rao", "ML-77341", "arjun.rao.fake@example.org"]
+  },
+  "en-prescription.txt": {
+    "kind": "prescription", "date": "2026-09-16",
+    "medicines": ["Metformin", "Telmisartan", "Vitamin D3", "Atorvastatin", "Paracetamol"],
+    "secrets": ["Rajesh", "Verma", "91234 56789"]
+  },
+  "hi-prescription.txt": {
+    "kind": "prescription", "date": "2026-08-06",
+    "medicines": ["Thyroxine", "Vitamin D3", "Methylcobalamin"],
+    "secrets": ["सुनीता", "अग्रवाल", "99887 66554"]
+  }
+}

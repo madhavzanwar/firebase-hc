@@ -1,0 +1,15 @@
+DR. KAVITA JOSHI, MBBS MD (Medicine)
+Joshi Clinic, Synthetic sample prescription for LabLens testing
+
+Patient: Mr. Rajesh Kumar Verma    Age: 52 Y    Sex: M
+Mob: 91234 56789
+Date: 16/09/2026
+
+Rx
+1. Tab. Metformin 500 mg   1-0-1   after food   x 30 days
+2. Tab. Telmisartan 40 mg   OD   before breakfast   for 30 days
+3. Cap. Vitamin D3 60000 IU   weekly   x 8 weeks
+4. Tab. Atorvastatin 10 mg   0-0-1   at bedtime   x 30 days
+5. Tab. Paracetamol 650 mg   SOS   for fever
+
+Review after 1 month with FBS, HbA1c.
