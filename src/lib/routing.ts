@@ -28,6 +28,8 @@ export interface Capabilities {
   nano: NanoStatus;
   /** Output languages Nano accepted when probed (en always tried; hi/mr probed too). */
   nanoLangs: Lang[];
+  /** Nano accepts image input (needs the multimodal flag). Defaults to true. */
+  nanoImage?: boolean;
   online: boolean;
   /** Firebase is configured (so cloud calls can be made). */
   cloudConfigured: boolean;
@@ -103,7 +105,7 @@ export function decideRoute(task: Task, input: TaskInput, caps: Capabilities, pr
       return nano ? { route: 'device', reason: 'never_cloud_raw_text', outputLang: 'en' } : { route: 'local_rules', reason: 'no_nano_rules_only', outputLang: 'en' };
 
     case 'read_image': {
-      const deviceType = !!input.imageMime && DEVICE_IMAGE_TYPES.includes(input.imageMime);
+      const deviceType = !!input.imageMime && DEVICE_IMAGE_TYPES.includes(input.imageMime) && caps.nanoImage !== false;
       const cloudForImage = cloudPossible && !prefs.onDeviceOnly && !!input.imageConsent;
       if (nano && deviceType) {
         return cloudForImage ? { route: 'hybrid', reason: 'nano_ready_cloud_allowed', outputLang: 'en' } : { route: 'device', reason: 'nano_ready', outputLang: 'en' };

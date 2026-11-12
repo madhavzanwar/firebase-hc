@@ -121,7 +121,7 @@ export function parseDocument(text: string): ParsedDocument {
   }
   const medicines = parsePrescription(norm);
 
-  let sex: Sex = 'unknown';
+  let sex: Sex;
   let age: number | undefined;
   const as = AGE_SEX_RE.exec(norm);
   if (as) {

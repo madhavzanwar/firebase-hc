@@ -19,10 +19,10 @@ export function normaliseDigits(input: string): string {
 /** Normalise typographic dashes, unicode minus and spaces so regexes stay simple. */
 export function normalisePunctuation(input: string): string {
   return normaliseDigits(input)
-    .replace(/[‐-―−﹘﹣－]/g, '-')
-    .replace(/[   ]/g, ' ')
-    .replace(/≤/g, '<=')
-    .replace(/≥/g, '>=');
+    .replace(/[\u2010-\u2015\u2212\uFE58\uFE63\uFF0D]/g, '-')
+    .replace(/[\u00A0\u2007\u202F]/g, ' ')
+    .replace(/\u2264/g, '<=')
+    .replace(/\u2265/g, '>=');
 }
 
 /**
